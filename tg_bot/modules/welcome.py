@@ -155,7 +155,7 @@ def left_member(bot: Bot, update: Update):
 
             # Give the owner a special goodbye
             if left_mem.id == OWNER_ID:
-                update.effective_message.reply_text("RIP Master")
+                update.effective_message.reply_text("Sed! My Master Left The Group.")
                 return
 
             # if media goodbye, use appropriate function for it
@@ -300,7 +300,7 @@ def set_welcome(bot: Bot, update: Update) -> str:
         return ""
 
     sql.set_custom_welcome(chat.id, content or text, data_type, buttons)
-    msg.reply_text("Welcome Message set🐾🐾🐾")
+    msg.reply_text("Yup! New Welcome Message Had Been Set!")
 
     return "<b>{}:</b>" \
            "\n#SET_WELCOME" \
