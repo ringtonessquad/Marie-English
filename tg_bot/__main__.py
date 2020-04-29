@@ -18,17 +18,9 @@ from tg_bot.modules.helper_funcs.chat_status import is_user_admin
 from tg_bot.modules.helper_funcs.misc import paginate_modules
 
 PM_START_TEXT = """
-Hey {} ! My name is {} - I'm here to help you manage your groups!... Click /Help  to find out more about how to use me to my full potential.
+Hey there! My name is Rose - I'm here to help you manage your groups! Hit /help to find out more about how to use me to my full potential.
 
-Made with love by [this guy](tg://user?id={}).
-
-My future updates will be put into This Group - @CuratorCrew
-
-I'm built in python3, using the python-telegram-bot library.
-
-You can find the list of available commands with /help.🙂
-
-If you're enjoying using me, and/or would like to help me survive in the wild, hit /donate to help fund/upgrade my VPS!
+Want to add me to your chat? [Click here!](http://telegram.me/MissRoseTG_Bot?startgroup=botstart) 
 
 
 
@@ -36,23 +28,23 @@ If you're enjoying using me, and/or would like to help me survive in the wild, h
 
 HELP_STRINGS = """
 
-Hello! my name *{}*.
+Hey! My name is Rose. I am a group management bot, here to help you get around and keep the order in your groups!
+I have lots of handy features, such as flood control, a warning system, a note keeping system, and even predetermined replies on certain keywords.
 
-*Main* available commands:
- - /start: Start the bot...
- - /help: help....
- - /donate: To find out more about donating!
- - /settings:
-   - in PM: To find out what SETTINGS you have set....
-   - in a group:
+Helpful commands:
+- /start: Starts me! You've probably already used this.
+- /help: Sends this message; I'll tell you more about myself!
+- /donate: Gives you info on how to support me and my creator.
 
-{}
-And the following:
-""".format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "\nAll of the following commands  / or ! can  be used...\n")
+If you have any bugs or questions on how to use me, have a look at [my channel](https://t.me/unknown_hacker_005_x) , or head to @Sisira_Ivanna .
+ All commands can be used with the following: / !
 
-DONATE_STRING = """Heya, glad to hear you want to donate!
-It took lots of work for [my creator](t.me/TheDarkW3b) to get me to where I am now, and every donation helps \
-motivate him to make me even better. All the donation money will go to a better VPS """ 
+DONATE_STRING = """ So you want to donate? Amazing!
+It took a lot of work for [my creator](https://t.me/sisira_ivanna) to get me to where I am now - so if you have some money to spare, and want to show your support; Donate!
+After all, server fees don't pay themselves - so every little helps! All donation money goes straight to funding the VPS, and of course, boosting morale - always nice to see my work is appreciated :)
+You can donate on paypal here, or if you want to help support me on a monthly basis, you can set up a recurring donation on GitHub Sponsors.
+Thank you for your generosity! Kindly [Donate Me Here](https://t.me/sisira_ivanna) 
+""" 
 IMPORTED = {}
 MIGRATEABLE = []
 HELPABLE = {}
